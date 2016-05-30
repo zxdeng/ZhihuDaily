@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /**
  * Description：所有fragment的基类
@@ -60,5 +61,9 @@ public abstract class BaseFragment extends Fragment {
         intent.setClass(getActivity(), cls);
         intent.putExtras(extras);
         startActivity(intent);
+    }
+
+    protected void showToast(String msg){
+        Toast.makeText(mContext, msg, Toast.LENGTH_SHORT).show();
     }
 }
