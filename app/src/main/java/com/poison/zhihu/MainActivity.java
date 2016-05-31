@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mNavigationMenu.add("测试数据2");
         mNavigationMenu.add("测试数据3");
         mNavigationMenu.add("测试数据4");
+        mNavigationMenu.add("test");
     }
 
     @Override
