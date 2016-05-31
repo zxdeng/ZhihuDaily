@@ -8,10 +8,7 @@
         <item
             android:id="@+id/menu_home"
             android:checked="true"
-            android:icon="@drawable/ic_error_page"
+            android:icon="@mipmap/ic_drawer_home"
             android:title="首页"/>
     </group>
-    <group
-        android:id="@+id/main_drawer_sub"
-        android:checkableBehavior="single"/>
 </menu>
