@@ -13,7 +13,7 @@ import java.util.List;
  * Created by poison on 2016/5/27 0027.
  */
 public abstract class BaseLoadFragment extends BaseFragment {
-    protected LoadPager mLoadPager = null;
+    private LoadPager mLoadPager = null;
 
     @Override
     protected void initData() {
@@ -21,7 +21,7 @@ public abstract class BaseLoadFragment extends BaseFragment {
     }
 
     @Override
-    protected View initView(LayoutInflater inflater, ViewGroup container) {
+    protected View initView(final LayoutInflater inflater, final ViewGroup container) {
         if (mLoadPager == null) {
             mLoadPager = new LoadPager(getActivity()) {
                 @Override
@@ -59,6 +59,13 @@ public abstract class BaseLoadFragment extends BaseFragment {
     }
 
     /**
+     * 显示错误页面
+     */
+    protected void showErrorView(){
+        mLoadPager.showPage(LoadPager.STATE_ERROR);
+    }
+
+    /**
      * 根据List类型的结果判断显示的页面
      *
      * @param resultData
@@ -70,6 +77,12 @@ public abstract class BaseLoadFragment extends BaseFragment {
             mLoadPager.showPage(LoadPager.STATE_EMPTY);
         } else {
             mLoadPager.showPage(LoadPager.STATE_SUCCESS);
+        }
+    }
+
+    protected void show(){
+        if (mLoadPager!= null){
+            mLoadPager.show();
         }
     }
 }

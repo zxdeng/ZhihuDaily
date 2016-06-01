@@ -17,11 +17,14 @@ import android.widget.Toast;
 public abstract class BaseFragment extends Fragment {
 
     protected Context mContext = null;
-    protected View mRootView = null;
+    protected LayoutInflater mInflater;
+    protected ViewGroup mContainer;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        mInflater = inflater;
+        mContainer = container;
         return initView(inflater,container);
     }
 

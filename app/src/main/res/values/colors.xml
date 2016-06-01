@@ -3,4 +3,7 @@
     <color name="colorPrimary">#00A2ED</color>
     <color name="colorPrimaryDark">#1976D2</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="bg">#F3F3F3</color>
+    <color name="editor_tx_color">#6F6F6F</color>
+    <color name="list_news_bg_stroke_color">#C7C7C7</color>
 </resources>
