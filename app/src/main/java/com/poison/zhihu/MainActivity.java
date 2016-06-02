@@ -3,7 +3,6 @@ package com.poison.zhihu;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private Menu mMenu;
     private DrawerLayout mMainDrawer;
     private Toolbar mToolbar;
-    private SwipeRefreshLayout mMainSwipeRefresh;
 
 
 
@@ -29,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mMainDrawer = (DrawerLayout) findViewById(R.id.main_drawer);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mMainSwipeRefresh = (SwipeRefreshLayout) findViewById(R.id.main_swipeRefresh);
         setSupportActionBar(mToolbar);
         mNavigationView = (NavigationView) findViewById(R.id.main_menu);
         //设置toolbar 使用v7包

@@ -28,5 +28,6 @@ dependencies {
     compile project(':httplibrary')
     compile project(':loadpager-library')
     compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.7.4'
+//    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v1.7.4'
+    compile 'com.zhy:base-adapter:2.0.0'
 }
